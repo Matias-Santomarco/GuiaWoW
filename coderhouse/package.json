@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
+  },
+  "scripts": {
+    "sass": "sass --watch ./scss/styles.scss:output.css",
+    "sass-reset": "sass ./scss/reset.scss:reset.css"
+  }
+}

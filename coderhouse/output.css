@@ -1,0 +1,194 @@
+h1 {
+  font-family: "Young Serif", serif;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 25px rgba(46, 117, 198, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(0, 0, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(0, 0, 255, 0.7);
+  }
+}
+body {
+  background-color: #212529;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: auto;
+}
+body header li {
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  body header .lk {
+    width: 100%;
+    height: auto;
+  }
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  text-align: center;
+  flex-flow: column wrap;
+}
+body main .arriba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-flow: column wrap;
+  text-align: center;
+}
+body main .container {
+  width: 71%;
+  padding: 10px 15px;
+  border: 5px solid;
+  margin-bottom: 50px;
+}
+body main .raids {
+  width: 90%;
+}
+body main .raids .nombreraid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(221, 230, 53);
+}
+body main .raids .fotoraids {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 5px;
+  margin-bottom: 200px;
+}
+@media (max-width: 1200px) {
+  body main .raids .fotoraids * {
+    width: 100%;
+    height: auto;
+  }
+}
+body main .raids .fotoraids .animaciones:hover {
+  animation: glowing 2s infinite;
+}
+body main .fotoyo {
+  width: auto;
+}
+@media (max-width: 1200px) {
+  body main .fotoyo {
+    width: 100%;
+  }
+}
+body main .jaraxxus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  border: 5px solid;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+body main .jraxxush2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  color: rgb(171, 78, 78);
+  text-decoration: underline;
+}
+body main .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: column wrap;
+}
+body main .whatsapp {
+  color: green;
+}
+body main .instagram {
+  color: rgb(214, 58, 100);
+}
+body main .Telegram {
+  color: rgb(82, 157, 232);
+}
+body footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+body .abajo {
+  bottom: 0;
+  width: 99%;
+  position: absolute;
+}
+body .jaraxxuspage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 71%;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+/*# sourceMappingURL=output.css.map */

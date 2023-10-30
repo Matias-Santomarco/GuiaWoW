@@ -1,0 +1,173 @@
+@import "./mixin.scss";
+@import "./general-styles.scss";
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 25px rgba(46, 117, 198, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 45px rgba(0, 0, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(0, 0, 255, 0.7);
+    }
+}
+
+
+body {
+    background-color: $bg-color;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: white;
+
+    
+    header {
+        @include flex-mixin;
+
+        flex-flow:column wrap;
+        margin: auto;
+
+        li{
+            display: inline-block;
+        }
+        
+        .lk {
+            @media (max-width: 1200px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    main {
+        @include flex-mixin;
+
+        width: 100%;
+        color: white;
+        text-align: center;
+        flex-flow: column wrap;
+
+        .arriba {
+            @include flex-mixin;
+
+            padding: 20px; 
+            flex-flow: column wrap;
+            text-align: center;
+        }
+
+        .container {
+            width: 71%;
+            padding: 10px 15px;
+            border: 5px solid;
+            margin-bottom: 50px;
+        }
+        
+        .raids {
+            width: 90%;
+            .nombreraid {
+                @include flex-mixin;
+    
+                font-size: xx-large;
+                flex-wrap: wrap;
+                flex-direction: column;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(221, 230, 53);
+            }
+    
+            .fotoraids {
+                @include flex-mixin;
+    
+                flex-flow:column wrap;
+                align-content: center;
+                padding: 5px;
+                margin-bottom: 200px;
+                * {
+                    @media (max-width: 1200px) {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .animaciones:hover {
+                    animation: glowing 2s infinite;
+                }
+            }
+        }
+        .fotoyo {
+            width: auto;
+            @media (max-width: 1200px) {
+                width: 100%;
+            }
+        }
+
+
+        .jaraxxus {
+            @include flex-mixin;
+
+            flex-flow: column wrap;
+            align-content: center;
+            border: 5px solid;
+            padding: 5px;
+            margin-bottom: 50px;
+        }
+        
+        .jraxxush2 {
+            @include flex-mixin;
+
+            flex-flow: column wrap;
+            align-content: center;
+            color: rgb(171, 78, 78);
+            text-decoration: underline;
+        }
+
+        .video {
+            @include flex-mixin;
+
+            align-content: center;
+            flex-wrap: column wrap;
+        }
+        .whatsapp {
+            color: green;
+        }
+        
+        .instagram {
+            color: rgb(214, 58, 100);
+        }
+        
+        .Telegram {
+            color: rgb(82, 157, 232);
+        }
+        
+    }
+    footer {
+        @include flex-mixin;
+
+        bottom: 0;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    .abajo {
+        bottom: 0;
+        width: 99%;
+        position: absolute;
+    }
+    
+    .jaraxxuspage{
+        @include flex-mixin;
+
+        margin: 0 auto;
+        width: 71%;
+        flex-flow: column wrap;
+        align-content: center;
+    
+    }
+    
+}
+
+
+
+
+
+
