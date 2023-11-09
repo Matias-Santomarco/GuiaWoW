@@ -4,7 +4,7 @@
     "sass": "^1.69.5"
   },
   "scripts": {
-    "sass": "sass --watch ./scss/styles.scss:output.css",
-    "sass-reset": "sass ./scss/reset.scss:reset.css"
+    "sass": "sass --watch ./styles/scss/styles.scss:./styles/CSS/output.css",
+    "sass-reset": "sass ./styles/scss/reset.scss:./styles/CSS/reset.css"
   }
 }

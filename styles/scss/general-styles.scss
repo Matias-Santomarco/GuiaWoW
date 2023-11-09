@@ -1,3 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@mixin flex-mixin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+$bg-color: #212529;
+
 h1 {
     font-family:'Young Serif', serif;
     color: white;
